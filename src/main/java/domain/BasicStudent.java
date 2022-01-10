@@ -11,12 +11,12 @@ public class BasicStudent implements Jsonable {
 
     protected String name;
     protected String surname;
-    protected Integer year;
+    protected int year;
 
     public BasicStudent() {
     }
 
-    public BasicStudent(String name, String surname, Integer year) {
+    public BasicStudent(String name, String surname, int year) {
         this.name = name;
         this.surname = surname;
         this.year = year;
