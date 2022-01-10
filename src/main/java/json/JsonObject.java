@@ -8,7 +8,7 @@ import java.util.Map;
  * Created by Andrii_Rodionov on 1/3/2017.
  */
 public class JsonObject extends Json {
-    Map<String, Json> jsonObject = new LinkedHashMap<>();
+    private Map<String, Json> jsonObject = new LinkedHashMap<>();
 
     public JsonObject(JsonPair... jsonPairs) {
         for (JsonPair pair : jsonPairs) {
@@ -24,8 +24,10 @@ public class JsonObject extends Json {
                 = jsonObject.entrySet().iterator();
 
         while (jsonIterator.hasNext()) {
-            Map.Entry<String, Json> json = (Map.Entry<String, Json>) jsonIterator.next();
-            jsonObjectString.append(json.getKey() + ": " + json.getValue().toJson());
+            Map.Entry<String, Json> json =
+                    (Map.Entry<String, Json>) jsonIterator.next();
+            jsonObjectString.append(json.getKey() +
+                    ": " + json.getValue().toJson());
             if (jsonIterator.hasNext()) {
                 jsonObjectString.append(", ");
             }

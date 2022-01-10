@@ -1,7 +1,5 @@
 package json;
 
-import javax.lang.model.type.NullType;
-
 /**
  * Created by Andrii_Rodionov on 1/4/2017.
  */
