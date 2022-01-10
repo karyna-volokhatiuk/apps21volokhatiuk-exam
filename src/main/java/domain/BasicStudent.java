@@ -2,7 +2,6 @@ package domain;
 
 import json.*;
 
-import java.lang.reflect.Field;
 
 /**
  * Created by Andrii_Rodionov on 1/5/2017.

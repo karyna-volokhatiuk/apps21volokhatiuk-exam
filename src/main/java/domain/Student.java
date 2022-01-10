@@ -2,10 +2,6 @@ package domain;
 
 import json.*;
 
-import java.sql.Array;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.Map;
 
 /**
  * Created by Andrii_Rodionov on 1/3/2017.
